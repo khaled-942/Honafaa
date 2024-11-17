@@ -1,0 +1,9 @@
+<p>test works!</p>
+<ul>
+    @for (audio of audios; track $index) {
+        <li>
+          {{ audio.title }} - {{ audio.description }}
+          <audio controls [src]="audio.url"></audio>
+        </li>
+    }
+  </ul>

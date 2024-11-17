@@ -1,0 +1,7 @@
+<p>upload works!</p>
+<form (ngSubmit)="uploadAudio()">
+    <input type="text" placeholder="Title" [(ngModel)]="newAudio.title" name="title" required />
+    <input type="text" placeholder="Description" [(ngModel)]="newAudio.description" name="description" />
+    <input type="text" placeholder="Audio URL" [(ngModel)]="newAudio.url" name="url" required />
+    <button type="submit">Upload</button>
+</form>
